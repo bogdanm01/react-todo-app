@@ -1,6 +1,6 @@
 .background-image-dark {
-  background: url("src/assets/images/bg-desktop-dark.webp") center center/cover
-    no-repeat;
+  background: url("public/assets/images/bg-desktop-dark.webp") center
+    center/cover no-repeat;
 }
 
 .background-image-light {
