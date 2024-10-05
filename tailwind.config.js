@@ -25,7 +25,7 @@ export default {
     },
     backgroundImage: {
       "check-gradient":
-        "linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
+        "linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
     },
     fontFamily: {
       sans: ["Josefin Sans", "sans-serif"],
