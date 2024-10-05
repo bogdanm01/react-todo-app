@@ -1,15 +1,15 @@
 .background-image-dark {
-  background: url("public/assets/images/bg-desktop-dark.webp") center
-    center/cover no-repeat;
+  background: url("assets/images/bg-desktop-dark.webp") center center/cover
+    no-repeat;
 }
 
 .background-image-light {
-  background: url("src/assets/images/bg-desktop-light.webp") center center/cover
+  background: url("assets/images/bg-desktop-light.webp") center center/cover
     no-repeat;
 }
 
 .image-container {
-  background: url("src/assets/images/bg-desktop-light.webp") center center/cover
+  background: url("assets/images/bg-desktop-light.webp") center center/cover
     no-repeat;
   height: 17.7rem;
   width: 100%;

@@ -6,7 +6,7 @@ const Header = () => {
       </h1>
       <img
         className="cursor-pointer w-6 h-6 mb-2"
-        src="src/assets/icons/icon-sun.svg"
+        src="assets/icons/icon-sun.svg"
         alt="theme toggle"
       />
     </div>
