@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="flex items-center justify-between">
-      <h1 className="text-[38px] font-bold tracking-[0.85rem] text-light-very-light-gray">
+      <h1 className="text-[38px] font-bold tracking-[0.85rem] text-light-very-light-gray select-none">
         TODO
       </h1>
       <img
