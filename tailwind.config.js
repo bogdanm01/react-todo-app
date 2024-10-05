@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  // darkMode: "class",
   theme: {
     colors: {
-      // Light Theme
       light: {
         "very-light-gray": "hsl(0, 0%, 98%)",
         "very-light-grayish-blue": "hsl(236, 33%, 92%)",
@@ -11,7 +11,6 @@ export default {
         "dark-grayish-blue": "hsl(236, 9%, 61%)",
         "very-dark-grayish-blue": "hsl(235, 19%, 35%)",
       },
-      // Dark Theme
       dark: {
         "very-dark-blue": "hsl(235, 21%, 11%)",
         "very-dark-desaturated-blue": "hsl(235, 24%, 19%)",
@@ -21,6 +20,12 @@ export default {
         "very-dark-grayish-blue": "hsl(233, 14%, 35%)",
         "very-dark-grayish-blue-alt": "hsl(237, 14%, 26%)",
       },
+      "bright-blue": "hsl(220, 98%, 61%)",
+      transparent: "transparent",
+    },
+    backgroundImage: {
+      "check-gradient":
+        "linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
     },
     fontFamily: {
       sans: ["Josefin Sans", "sans-serif"],
