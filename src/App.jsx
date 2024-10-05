@@ -4,9 +4,10 @@ import "./App.css";
 import TodoItemsList from "./components/todo-items-list";
 import NewTodo from "./components/new-todo";
 import Footer from "./components/footer";
+import { useLocalStorage } from "./hooks/useLocalStorage";
 
 const App = () => {
-  const [todoItems, setTodoItems] = useState([]);
+  const [todoItems, setTodoItems] = useLocalStorage("storedItems", []);
 
   const uncompletedItemsCount = todoItems.filter(
     (item) => !item.completed
