@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   .image-container {
-    background: url("src/assets/images/bg-desktop-dark.webp") center
+    background: url("public/assets/images/bg-desktop-dark.webp") center
       center/cover no-repeat;
   }
 }
