@@ -10,7 +10,7 @@ const Checkbox = ({ checked, handleChecked, itemId }) => {
         >
           <img
             className="select-none"
-            src="src/assets/icons/icon-check.svg"
+            src="assets/icons/icon-check.svg"
             alt="check icon"
           />
         </div>
