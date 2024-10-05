@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import ShortUniqueId from "short-unique-id";
+import { useKey } from "../hooks/useKey";
 
 const NewTodo = ({ setTodoItems }) => {
   const [taskText, setItemText] = useState("");
@@ -21,22 +22,10 @@ const NewTodo = ({ setTodoItems }) => {
     }
   };
 
-  useEffect(() => {
-    const inputElement = inputElementRef.current;
-
-    const callback = (e) => {
-      if (document.activeElement === inputElement) return;
-      if (e.code === "Enter") {
-        inputElement.focus();
-      }
-    };
-
-    document.addEventListener("keydown", callback);
-
-    return () => {
-      document.removeEventListener("keydown", callback);
-    };
-  }, []);
+  useKey("Enter", () => {
+    if (document.activeElement === inputElementRef.current) return;
+    inputElementRef.current.focus();
+  });
 
   return (
     <div className="flex items-center gap-[1.125rem] bg-dark-very-dark-desaturated-blue px-5 py-[1.125rem] mt-7 rounded-md shadow-2xl">
