@@ -7,7 +7,7 @@ A minimalist Todo App built with React, featuring local storage persistence, dra
 - **Local Storage Persistence**: Automatically saves and loads your tasks to/from local storage.
 - **Drag & Drop Reordering**: Easily reorder your tasks with intuitive drag-and-drop functionality.
 - **Theme Toggle**: Switch between light and dark themes to suit your preferences.
-- - **Filtering**: Filter for All, Active or Completed items.
+- **Filtering**: Filter for All, Active or Completed items.
 
 ![Todo App](screenshot.png?raw=true "Todo App")
 
