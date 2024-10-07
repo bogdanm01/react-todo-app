@@ -28,7 +28,7 @@ const NewTodo = ({ setTodoItems }) => {
   });
 
   return (
-    <div className="flex items-center gap-[1.125rem] bg-light-very-light-gray dark:bg-dark-very-dark-desaturated-blue px-5 py-[1.1rem] mt-7 rounded-md drop-shadow-glow dark:drop-shadow-none dark:shadow-2xl">
+    <div className="flex items-center gap-[1.125rem] bg-white dark:bg-dark-very-dark-desaturated-blue px-5 py-[1rem] mt-7 rounded-md drop-shadow-glow dark:drop-shadow-none dark:shadow-2xl">
       <div className="min-h-[1.4rem] min-w-[1.4rem] rounded-full border border-light-very-light-grayish-blue  dark:border-dark-very-dark-grayish-blue-alt"></div>
       <input
         value={taskText}

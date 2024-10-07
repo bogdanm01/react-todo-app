@@ -17,3 +17,7 @@ html .image-container {
   background: url("/assets/images/bg-desktop-light.webp") center center/cover
     no-repeat;
 }
+
+body * {
+  @apply transition-colors duration-300;
+}

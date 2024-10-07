@@ -30,6 +30,7 @@ export default {
       },
       "bright-blue": "hsl(220, 98%, 61%)",
       transparent: "transparent",
+      white: "#fff",
     },
     backgroundImage: {
       "check-gradient":

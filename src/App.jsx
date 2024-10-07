@@ -52,12 +52,12 @@ const App = () => {
     <div className="min-h-screen bg-light-very-light-gray dark:bg-dark-very-dark-blue">
       <div className="image-container"></div>
       <div className="max-w-[32rem] -my-[13.6rem] mx-auto">
-        <Header setTheme={setTheme} />
+        <Header theme={theme} setTheme={setTheme} />
         <NewTodo setTodoItems={setTodoItems} />
 
         {todoItems.length > 0 && (
           <>
-            <div className="mt-5 drop-shadow-xl bg-light-very-light-gray dark:bg-dark-very-dark-desaturated-blue rounded">
+            <div className="mt-5 drop-shadow-xl bg-white dark:bg-dark-very-dark-desaturated-blue rounded">
               <TodoItemsList
                 items={filteredItems}
                 handleChecked={handleChecked}

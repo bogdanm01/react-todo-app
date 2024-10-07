@@ -1,4 +1,4 @@
-const Header = ({ setTheme }) => {
+const Header = ({ theme, setTheme }) => {
   return (
     <div className="flex items-center justify-between">
       <h1 className="text-[38px] font-bold tracking-[0.85rem] text-light-very-light-gray select-none">
@@ -12,7 +12,11 @@ const Header = ({ setTheme }) => {
           })
         }
         className="cursor-pointer w-6 h-6 mb-2"
-        src="assets/icons/icon-sun.svg"
+        src={`${
+          theme === "dark"
+            ? "assets/icons/icon-sun.svg"
+            : "assets/icons/icon-moon.svg"
+        }`}
         alt="theme toggle"
       />
     </div>
