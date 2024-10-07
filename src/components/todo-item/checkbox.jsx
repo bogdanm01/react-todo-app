@@ -17,7 +17,7 @@ const Checkbox = ({ checked, handleChecked, itemId }) => {
       ) : (
         <div
           onClick={() => handleChecked(itemId)}
-          className="min-h-[1.4rem] min-w-[1.4rem] rounded-full border border-dark-very-dark-grayish-blue-alt cursor-pointer"
+          className="min-h-[1.4rem] min-w-[1.4rem] rounded-full border border-light-very-light-grayish-blue dark:border-dark-very-dark-grayish-blue-alt cursor-pointer"
         />
       )}
     </>

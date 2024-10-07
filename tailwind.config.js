@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  // darkMode: "class",
+  darkMode: "selector",
   theme: {
+    extend: {
+      dropShadow: {
+        glow: [
+          "0 5px 10px rgba(255,255, 255, 0.2)",
+          "0 10px 20px rgba(255, 255,255, 0.1)",
+        ],
+      },
+    },
     colors: {
       light: {
         "very-light-gray": "hsl(0, 0%, 98%)",

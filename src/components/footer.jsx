@@ -7,7 +7,7 @@ const Footer = ({
   const filters = ["All", "Active", "Completed"];
 
   return (
-    <div className="text-[12px] w-full px-6 py-4 overflow-hidden flex justify-between text-dark-dark-grayish-blue items-end">
+    <div className="text-[12px] w-full px-6 py-4 overflow-hidden flex justify-between text-light-dark-grayish-blue dark:text-dark-dark-grayish-blue items-end">
       <p>
         {uncompletedItemsCount}{" "}
         {`${uncompletedItemsCount === 1 ? "item" : "items"}`} left

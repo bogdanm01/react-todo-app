@@ -3,26 +3,17 @@
     no-repeat;
 }
 
-.background-image-light {
-  background: url("/assets/images/bg-desktop-light.webp") center center/cover
-    no-repeat;
-}
-
 .image-container {
   height: 17.7rem;
   width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  .image-container {
-    background: url("/assets/images/bg-desktop-dark.webp") center center/cover
-      no-repeat;
-  }
+html.dark .image-container {
+  background: url("/assets/images/bg-desktop-dark.webp") center center/cover
+    no-repeat;
 }
 
-@media (prefers-color-scheme: light) {
-  .image-container {
-    background: url("/assets/images/bg-desktop-light.webp") center center/cover
-      no-repeat;
-  }
+html .image-container {
+  background: url("/assets/images/bg-desktop-light.webp") center center/cover
+    no-repeat;
 }
