@@ -1,4 +1,9 @@
-const Footer = ({ uncompletedItemsCount, activeFilter, setActiveFilter }) => {
+const Footer = ({
+  uncompletedItemsCount,
+  activeFilter,
+  setActiveFilter,
+  onClearCompleted,
+}) => {
   const filters = ["All", "Active", "Completed"];
 
   return (
@@ -20,7 +25,12 @@ const Footer = ({ uncompletedItemsCount, activeFilter, setActiveFilter }) => {
           </p>
         ))}
       </span>
-      <p className="cursor-pointer hover:text-bright-blue">Clear completed</p>
+      <p
+        onClick={() => onClearCompleted()}
+        className="cursor-pointer hover:text-bright-blue"
+      >
+        Clear completed
+      </p>
     </div>
   );
 };

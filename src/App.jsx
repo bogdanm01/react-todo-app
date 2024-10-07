@@ -10,6 +10,10 @@ const App = () => {
   const [todoItems, setTodoItems] = useLocalStorage("storedItems", []);
   const [activeFilter, setActiveFilter] = useState("All");
 
+  const handleClearCompleted = () => {
+    setTodoItems((items) => items.filter((i) => !i.completed));
+  };
+
   const getFilteredItems = () => {
     if (activeFilter === "All") {
       return todoItems;
@@ -55,6 +59,7 @@ const App = () => {
                 uncompletedItemsCount={uncompletedItemsCount}
                 activeFilter={activeFilter}
                 setActiveFilter={setActiveFilter}
+                onClearCompleted={handleClearCompleted}
               />
             </div>
             <p className="text-center mt-10 pb-4 text-[13px] text-dark-very-dark-grayish-blue">
