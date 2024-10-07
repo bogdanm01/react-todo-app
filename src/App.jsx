@@ -8,6 +8,19 @@ import { useLocalStorage } from "./hooks/useLocalStorage";
 
 const App = () => {
   const [todoItems, setTodoItems] = useLocalStorage("storedItems", []);
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const getFilteredItems = () => {
+    if (activeFilter === "All") {
+      return todoItems;
+    } else if (activeFilter === "Active") {
+      return todoItems.filter((item) => item.completed === false);
+    } else {
+      return todoItems.filter((item) => item.completed === true);
+    }
+  };
+
+  const filteredItems = getFilteredItems();
 
   const uncompletedItemsCount = todoItems.filter(
     (item) => !item.completed
@@ -34,8 +47,15 @@ const App = () => {
         {todoItems.length > 0 && (
           <>
             <div className="mt-5 drop-shadow-xl bg-dark-very-dark-desaturated-blue rounded">
-              <TodoItemsList items={todoItems} handleChecked={handleChecked} />
-              <Footer uncompletedItemsCount={uncompletedItemsCount} />
+              <TodoItemsList
+                items={filteredItems}
+                handleChecked={handleChecked}
+              />
+              <Footer
+                uncompletedItemsCount={uncompletedItemsCount}
+                activeFilter={activeFilter}
+                setActiveFilter={setActiveFilter}
+              />
             </div>
             <p className="text-center mt-10 pb-4 text-[13px] text-dark-very-dark-grayish-blue">
               Drag and drop to reorder list
