@@ -60,6 +60,7 @@ const App = () => {
             <div className="mt-5 drop-shadow-xl bg-white dark:bg-dark-very-dark-desaturated-blue rounded">
               <TodoItemsList
                 items={filteredItems}
+                setTodoItems={setTodoItems}
                 handleChecked={handleChecked}
               />
               <Footer
