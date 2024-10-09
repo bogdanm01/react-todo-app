@@ -18,7 +18,7 @@ const TodoItem = ({ item, handleChecked, onDeleteItem }) => {
       ref={setNodeRef}
       style={style}
       {...attributes}
-      className="group cursor-default select-none flex items-center gap-[1.125rem] px-5 py-[1.05rem] overflow-hidden border-b border-light-very-light-grayish-blue dark:border-b-dark-very-dark-grayish-blue-alt"
+      className="group cursor-default select-none flex items-center gap-[1.125rem] px-5 py-[1.05rem] bg-white dark:bg-dark-very-dark-desaturated-blue border-b border-light-very-light-grayish-blue dark:border-b-dark-very-dark-grayish-blue-alt"
     >
       <Checkbox checked={completed} handleChecked={handleChecked} itemId={id} />
       <div className="flex w-full cursor-pointer" {...listeners}>

@@ -61,7 +61,7 @@ const App = () => {
 
         {todoItems.length > 0 && (
           <>
-            <div className="mt-5 drop-shadow-xl bg-white dark:bg-dark-very-dark-desaturated-blue rounded">
+            <div className="overflow-hidden mt-5 drop-shadow-xl bg-white dark:bg-dark-very-dark-desaturated-blue rounded">
               <TodoItemsList
                 handleDeletion={handleDeletion}
                 items={filteredItems}
