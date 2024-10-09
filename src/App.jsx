@@ -37,6 +37,10 @@ const App = () => {
     (item) => !item.completed
   ).length;
 
+  const handleDeletion = (itemId) => {
+    setTodoItems((items) => items.filter((item) => item.id !== itemId));
+  };
+
   const handleChecked = (itemId) => {
     setTodoItems((items) => {
       return items.map((item) => {
@@ -59,6 +63,7 @@ const App = () => {
           <>
             <div className="mt-5 drop-shadow-xl bg-white dark:bg-dark-very-dark-desaturated-blue rounded">
               <TodoItemsList
+                handleDeletion={handleDeletion}
                 items={filteredItems}
                 setTodoItems={setTodoItems}
                 handleChecked={handleChecked}

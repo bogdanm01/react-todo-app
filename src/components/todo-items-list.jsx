@@ -15,7 +15,12 @@ import {
   restrictToVerticalAxis,
 } from "@dnd-kit/modifiers";
 
-const TodoItemsList = ({ items, setTodoItems, handleChecked }) => {
+const TodoItemsList = ({
+  items,
+  setTodoItems,
+  handleChecked,
+  handleDeletion,
+}) => {
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
@@ -54,6 +59,7 @@ const TodoItemsList = ({ items, setTodoItems, handleChecked }) => {
               item={item}
               id={item.id}
               handleChecked={handleChecked}
+              onDeleteItem={handleDeletion}
             />
             // </li>
           ))}
