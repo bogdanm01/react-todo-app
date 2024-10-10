@@ -2,7 +2,7 @@
 
 A minimalist Todo App built with React, featuring local storage persistence, drag-and-drop reordering, and a theme toggle for enhanced user experience. This project is a solution to the **Frontend Mentor Todo App challenge**.
 
-Live previw: [](react-todo-app-three-kappa.vercel.app)
+Live previw: [react-todo-app-three-kappa.vercel.app](react-todo-app-three-kappa.vercel.app)
 
 ## Features
 
